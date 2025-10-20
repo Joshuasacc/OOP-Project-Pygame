@@ -13,6 +13,9 @@ SIZE = 64  # SIZE OF EACH TILE IN PIXELS
 #SIZE = 32  # SIZE OF EACH TILE IN PIXELS
 # SIZE = 48  # SIZE OF EACH TILE IN PIXELS
 # SIZE = 96  # SIZE OF EACH TILE IN PIXELS
+ROWS = 12
+COLS = 30
+
 
 
 # COLOURS
@@ -44,10 +47,12 @@ LIGHTGREY = (192, 192, 192)
 
 PLAYER = {
     # Row 0: Walking
-    "walk_down": [(0, 4), (0, 3), (0, 5)], 
-    "walk_left": [(0, 1), (0, 0), (0, 2)],
-    "walk_right": [(0, 7), (0, 6), (0, 8)],
-    "walk_up": [(0, 10), (0, 9), (0, 11)],
+    "walk_down": [(0, 0), (0, 1), (0, 2)], 
+    #"walk_left": [(0, 1), (0, 0), (0, 2)],
+    "walk_left": [(3, 0), (3, 1), (3, 2)],
+    #"walk_right": [(0, 7), (0, 6), (0, 8)],
+    "walk_right": [(1, 0), (1, 1), (1, 2)],
+    "walk_up": [(2, 0), (2, 1), (2, 2)],
     
     # Row 2: Idling (Assuming these are the stand-still frames)
     "idle_down": [(2, 3)],
@@ -67,3 +72,5 @@ PLAYER = {
     # Row 5: Sleep
     "sleep_anim": [(5, 0), (5, 1), (5, 2), (5, 3), (5, 4)],
 }
+
+HARD_BLOCK = {"hard_block":[]}
