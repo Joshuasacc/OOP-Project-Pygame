@@ -27,3 +27,17 @@ class Game:
   def draw(self,window):
     # self.PLAYER.draw(window)
     self.PLAYER.draw(window)
+
+  def generate_level_matrix(self,rows,cols):
+    """Generate the basic level matrix"""
+    matrix = []
+    for row in range(rows + 1):
+      line = []
+      for col in range(cols + 1):
+        line.append("_")
+      matrix.append(line)
+    for row in matrix:
+      print(row)
+    return matrix
+      
+
